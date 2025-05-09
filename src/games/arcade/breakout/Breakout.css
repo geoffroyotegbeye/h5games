@@ -1,0 +1,110 @@
+.breakout-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0f172a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+.game-canvas {
+  border: 2px solid #334155;
+  border-radius: 4px;
+  background-color: #0f172a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.start-screen, .game-over, .game-won {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f8fafc;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.start-screen h2, .game-over h2, .game-won h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.start-screen h2 {
+  color: #3b82f6;
+}
+
+.game-over h2 {
+  color: #ef4444;
+}
+
+.game-won h2 {
+  color: #22c55e;
+}
+
+.start-screen p, .game-over p, .game-won p {
+  margin-bottom: 10px;
+}
+
+.start-screen button, .game-over button, .game-won button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.instructions {
+  margin-top: 15px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.instructions p {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .breakout-game {
+    padding: 10px;
+  }
+  
+  .game-canvas {
+    width: 100%;
+    height: auto;
+  }
+}
